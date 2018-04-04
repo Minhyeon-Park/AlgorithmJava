@@ -3,10 +3,10 @@ package com.Stack;
 public class ArrayStack {
 	private int top;
 	private int capacity;
-	private int[] array;
+	private String[] array;
 	public ArrayStack(){
 		capacity = 1;
-		array = new int [capacity];
+		array = new String [capacity];
 		top = -1;
 	}
 	public boolean isEmpty(){
@@ -15,15 +15,15 @@ public class ArrayStack {
 	public boolean isStackFull(){
 		return( (top==capacity -1) );
 	}
-	public void push(int data){
+	public void push(String data){
 		if(isStackFull()) System.out.println("stack overflow");
 		else
 			array[++top] = data;
 	}
-	public int pop(){
+	public String pop(){
 		if(isEmpty()){
 			System.out.println("stack is empty");
-			return 0;
+			return null;
 		}
 		else return(array[top--]);
 	}
