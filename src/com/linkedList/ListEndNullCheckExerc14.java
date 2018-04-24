@@ -1,4 +1,4 @@
-package com.LinkedList;
+package com.linkedList;
 
 public class ListEndNullCheckExerc14 {
 	public static int findLoopLength (ListNode headNode){

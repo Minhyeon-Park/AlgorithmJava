@@ -1,4 +1,4 @@
-package com.Stack;
+package com.stack;
 
 public class ArrayStack {
 	private int top;

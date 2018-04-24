@@ -1,4 +1,4 @@
-package com.Stack;
+package com.stack;
 
 public class DynArrayStack {
 	private int top;

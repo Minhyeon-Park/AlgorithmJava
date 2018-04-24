@@ -1,7 +1,7 @@
-package com.Stack;
+package com.stack;
 import java.util.EmptyStackException;
 
-import com.LinkedList.ListNode;
+import com.linkedList.ListNode;
 public class LLStack {
 	private ListNode headNode;
 	public LLStack(){
