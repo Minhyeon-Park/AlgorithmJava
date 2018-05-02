@@ -2,6 +2,7 @@ package com.queue;
 
 public class QueueTest {
     public static void main (String[] args){
+        System.out.println("ArrayQueue Test");
         ArrayQueue aq = new ArrayQueue(5);
         System.out.println(aq.isEmpty());
         aq.enQueue(99);
@@ -12,6 +13,28 @@ public class QueueTest {
         //aq.enQueue(77);
         for (int i = 0 ; i < 5 ; i ++){
             System.out.println(aq.deQueue());
+        }
+
+        System.out.println("DynArrayQueue Test");
+        DynArrayQueue dq = DynArrayQueue.createDynArrayQueue();
+        System.out.println("QueueSize : "+ dq.getQueueSize());
+        dq.enQueue(3);
+        System.out.println("QueueSize : "+dq.getQueueSize());
+        dq.enQueue(4);
+        System.out.println("QueueSize : "+dq.getQueueSize());
+        dq.enQueue(5);
+        System.out.println("QueueSize : "+dq.getQueueSize());
+        dq.enQueue(6);
+        System.out.println("QueueSize : "+dq.getQueueSize());
+        dq.enQueue(7);
+        System.out.println("QueueSize : "+dq.getQueueSize());
+        dq.enQueue(8);
+        System.out.println("QueueSize : "+dq.getQueueSize());
+        dq.enQueue(9);
+        System.out.println("QueueSize : "+dq.getQueueSize());
+        int dqSize = dq.getQueueSize();
+        for (int i = 0 ; i <dqSize; i ++){
+            System.out.println(dq.deQueue());
         }
 
     }
