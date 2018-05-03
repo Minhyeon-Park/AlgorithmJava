@@ -37,6 +37,27 @@ public class QueueTest {
             System.out.println(dq.deQueue());
         }
 
+        System.out.println("LLQueue Test");
+        LLQueue lq = LLQueue.createQueue();
+
+        lq.enQueue(3);
+
+        lq.enQueue(4);
+
+        lq.enQueue(5);
+
+        lq.enQueue(6);
+
+        lq.enQueue(7);
+
+        lq.enQueue(8);
+
+        lq.enQueue(9);
+
+
+        while (!lq.isEmpty()){
+            System.out.println(lq.deQueue());
+        }
     }
 
 
